@@ -14,7 +14,7 @@ const client = twilio(accountSid, authToken);
 app.get('/call', (req, res) => {
   console.log('Received request to initiate call');
   console.log('Environment variables:', process.env);
-  console.log('Request headers:', req.headers);
+  // console.log('Request headers:', req.headers);
 
   client.calls
     .create({
